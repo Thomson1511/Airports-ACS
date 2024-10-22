@@ -340,6 +340,9 @@ document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter'){
         showNext();
     }
+    if (event.ctrlKey){
+        document.getElementById('Callsign').focus();
+    }
 });
 
 const dropdownInput = document.querySelector('.dropdown-input');
