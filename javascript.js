@@ -1,7 +1,7 @@
 let IcaoCallsigns = [
     {icaoc: "LHBC",	calls: "Békéscsaba",	country: "Magyarország"},
-    {icaoc: "LHDB",	calls: "Börgönd",	country: "Magyarország"},
-    {icaoc: "LHBP",	calls: "Budapest",	country: "Magyarország"},
+    {icaoc: "LHBD",	calls: "Börgönd",	country: "Magyarország"},
+    {icaoc: "LHBP",	calls: "Budapest Liszt Ferenc",	country: "Magyarország"},
     {icaoc: "LHBS",	calls: "Budaörs",	country: "Magyarország"},
     {icaoc: "LHDC",	calls: "Debrecen",    country: "Magyarország"},
     {icaoc: "LHDK",	calls: "Dunakeszi",   country: "Magyarország"},
@@ -19,7 +19,7 @@ let IcaoCallsigns = [
     {icaoc: "LHPP",	calls: "Pécs-Pogány", country: "Magyarország"},
     {icaoc: "LHPR",	calls: "Győr-Pér",    country: "Magyarország"},
     {icaoc: "LHSK",	calls: "Siófok-Kiliti",   country: "Magyarország"},
-    {icaoc: "LHSM",	calls: "Hévíz-Balaton",   country: "Magyarország"},
+    {icaoc: "LHSM",	calls: "Sármellék",   country: "Magyarország"},
     {icaoc: "LHTL",	calls: "Tököl",   country: "Magyarország"},
     {icaoc: "LHUD",	calls: "Szeged",  country: "Magyarország"},
     {icaoc: "LHKE",	calls: "Kecskemét",   country: "Magyarország"},
