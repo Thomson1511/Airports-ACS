@@ -343,6 +343,10 @@ document.addEventListener('keydown', function (event) {
     if (event.ctrlKey){
         document.getElementById('Callsign').focus();
     }
+    if (event.key === 'F1') {
+        event.preventDefault(); // Megakadályozza a böngésző alapértelmezett F1 súgó funkcióját
+        hint();
+    }
 });
 
 const dropdownInput = document.querySelector('.dropdown-input');
