@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Callsign quiz</title>
+    <title>Airport quiz</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
@@ -53,12 +53,20 @@
                     data-icon="material-symbols:arrow-drop-down" style="width: 30px;"></span></div>
                     <div class="dropdown-list" id="dropdownList">
                         <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:al-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Albánia</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:dz-4x3" style="width: 30px;"></span>
                             <span class="country-name">Algéria</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:at-4x3" style="width: 30px;"></span>
                             <span class="country-name">Ausztia</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:af-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Afganisztán</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:az-4x3" style="width: 30px;"></span>
@@ -81,8 +89,28 @@
                             <span class="country-name">Bulgária</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:ba-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Bosznia és Hercegovina</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:kr-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Dél-Korea</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:ly-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Líbia</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:ca-4x3" style="width: 30px;"></span>
                             <span class="country-name">Kanada</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:ic-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Kanári-szigetek</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:kz-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Kazahsztán</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:cn-4x3" style="width: 30px;"></span>
@@ -91,6 +119,10 @@
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:hr-4x3" style="width: 30px;"></span>
                             <span class="country-name">Horvátország</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:hk-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Hongkong</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:cy-4x3" style="width: 30px;"></span>
@@ -139,6 +171,14 @@
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:gr-4x3" style="width: 30px;"></span>
                             <span class="country-name">Görögország</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:mk-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Macedónia</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:mv-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Maldív-szigetek</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:hu-4x3" style="width: 30px;"></span>
@@ -261,12 +301,20 @@
                             <span class="country-name">Szingapúr</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:sy-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Szíria</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:sk-4x3" style="width: 30px;"></span>
                             <span class="country-name">Szlovákia</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:si-4x3" style="width: 30px;"></span>
                             <span class="country-name">Szlovénia</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:sd-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Szudán</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:es-4x3" style="width: 30px;"></span>
@@ -283,6 +331,10 @@
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:ch-4x3" style="width: 30px;"></span>
                             <span class="country-name">Svájc</span>
+                        </div>
+                        <div class="dropdown-item" onclick="selectOption(this)">
+                            <span class="iconify" data-icon="flag:tw-4x3" style="width: 30px;"></span>
+                            <span class="country-name">Tajpej</span>
                         </div>
                         <div class="dropdown-item" onclick="selectOption(this)">
                             <span class="iconify" data-icon="flag:th-4x3" style="width: 30px;"></span>
