@@ -427,19 +427,41 @@ function selectOption(element) {
 function filterOptions() {
     const filter = dropdownInput.value.toLowerCase();
     const options = dropdownList.getElementsByClassName('dropdown-item');
+    let firstVisibleOption = null; // Tárolja az első látható elemet
 
     for (let i = 0; i < options.length; i++) {
         const option = options[i];
         const countryName = option.querySelector('.country-name').textContent.toLowerCase();
         
+        // Töröljük a highlight osztályt, ha korábban meg lett jelölve
+        option.classList.remove('highlight');
+
         // Szűrés csak a filter-rel kezdődő országokra
         if (countryName.startsWith(filter)) {
             option.style.display = "";
+            if (!firstVisibleOption) {
+                firstVisibleOption = option; // Első látható elem mentése
+            }
         } else {
             option.style.display = "none";
         }
     }
+    // Ha van látható elem, azt kijelöljük
+    if (firstVisibleOption) {
+        firstVisibleOption.classList.add('highlight'); // Egyedi osztály a kijelöléshez
+    }
 }
+
+// Opció kiválasztása "Tab" lenyomásakor
+dropdownInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Tab') {
+        event.preventDefault(); // Megakadályozzuk az alapértelmezett tabulációt
+        const highlightedOption = dropdownList.querySelector('.highlight');
+        if (highlightedOption) {
+            selectOption(highlightedOption); // Kiválasztjuk a kijelölt opciót
+        }
+    }
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {
