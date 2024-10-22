@@ -1,7 +1,7 @@
 let IcaoCallsigns = [
-    {icaoc: "LHBC",	calls: "Békéscsaba",	contry: "Magyarország"},
-    {icaoc: "LHDB",	calls: "Börgönd",	contry: "Magyarország"},
-    {icaoc: "LHBP",	calls: "Budapest",	contry: "Magyarország"},
+    {icaoc: "LHBC",	calls: "Békéscsaba",	country: "Magyarország"},
+    {icaoc: "LHDB",	calls: "Börgönd",	country: "Magyarország"},
+    {icaoc: "LHBP",	calls: "Budapest",	country: "Magyarország"},
     {icaoc: "LHBS",	calls: "Budaörs",	country: "Magyarország"},
     {icaoc: "LHDC",	calls: "Debrecen",    country: "Magyarország"},
     {icaoc: "LHDK",	calls: "Dunakeszi",   country: "Magyarország"},
@@ -512,7 +512,7 @@ function showNext() {
         }
     } else {
         errors += 1;
-        ErrorList.push(ShuffledCallsigns[currentCallsignIndex].icaoc + " - " + ShuffledCallsigns[currentCallsignIndex].calls + " - " + ShuffledCallsigns[currentCallsignIndex].contry);
+        ErrorList.push(ShuffledCallsigns[currentCallsignIndex].icaoc + " - " + ShuffledCallsigns[currentCallsignIndex].calls + " - " + ShuffledCallsigns[currentCallsignIndex].country);
         errorstxt.innerHTML = errors;
 
         errorstxt.style.color = "red"; // Pirosra állítjuk
@@ -547,13 +547,13 @@ function clear(){
 function previousHint(){
     IcaoHint.innerHTML = ShuffledCallsigns[currentCallsignIndex - 1].icaoc;
     CallsignHint.innerHTML = ShuffledCallsigns[currentCallsignIndex - 1].calls;
-    CoutryHint.innerHTML = ShuffledCallsigns[currentCallsignIndex - 1].contry;
+    CoutryHint.innerHTML = ShuffledCallsigns[currentCallsignIndex - 1].country;
 }
 
 function hint(){
     IcaoHint.innerHTML = ShuffledCallsigns[currentCallsignIndex].icaoc;
     CallsignHint.innerHTML = ShuffledCallsigns[currentCallsignIndex].calls;
-    CoutryHint.innerHTML = ShuffledCallsigns[currentCallsignIndex].contry;
+    CoutryHint.innerHTML = ShuffledCallsigns[currentCallsignIndex].country;
     CoutryHint.style.backgroundColor = "white";
 }
 
@@ -581,7 +581,7 @@ function check(){
 }
 
 function checkCountry() {
-    if(countryName.toLowerCase() === ShuffledCallsigns[currentCallsignIndex - 1].contry.toLowerCase()){
+    if(countryName.toLowerCase() === ShuffledCallsigns[currentCallsignIndex - 1].country.toLowerCase()){
         return true;
     }
     else{
