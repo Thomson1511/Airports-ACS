@@ -347,6 +347,10 @@ document.addEventListener('keydown', function (event) {
         event.preventDefault(); // Megakadályozza a böngésző alapértelmezett F1 súgó funkcióját
         hint();
     }
+    if (event.key === 'F3') {
+        event.preventDefault();
+        deleteError();
+    }
 });
 
 const dropdownInput = document.querySelector('.dropdown-input');
