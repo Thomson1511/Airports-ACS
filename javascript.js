@@ -93,7 +93,7 @@ let IcaoCallsigns = [
     {icaoc: "EDDL",	calls: "Düsseldorf",  country: "Németország (Civil)"},
     {icaoc: "EDDM",	calls: "Munich",  country: "Németország (Civil)"},
     {icaoc: "EDDN",	calls: "Nürnberg",    country: "Németország (Civil)"},
-    {icaoc: "EDDP",	calls: "Leipzig/Halle",   country: "Németország (Civil)"},
+    {icaoc: "EDDP",	calls: "Leipzig",   country: "Németország (Civil)"},
     {icaoc: "EDDS",	calls: "Stuttgart",   country: "Németország (Civil)"},
     {icaoc: "EDDV",	calls: "Hannover",    country: "Németország (Civil)"},
     {icaoc: "EDDW",	calls: "Bremen",  country: "Németország (Civil)"},
