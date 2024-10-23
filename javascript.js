@@ -56,7 +56,7 @@ let IcaoCallsigns = [
     {icaoc: "LYNI",	calls: "Nis", country: "Szerbia És Montenegró"},
     {icaoc: "LYPG",	calls: "Podgorica",   country: "Szerbia És Montenegró"},
     {icaoc: "LYTV",	calls: "Tivat",   country: "Szerbia És Montenegró"},
-    {icaoc: "LYPR/BKPR",	calls: "Pristina",  country: "Szerbia És Montenegró"},
+    {icaoc: "LYPR",	calls: "Pristina",  country: "Szerbia És Montenegró"},
     {icaoc: "LDDU",	calls: "Dubrovnik",   country: "Horvátország"},
     {icaoc: "LDLO",	calls: "Losinj",  country: "Horvátország"},
     {icaoc: "LDOS",	calls: "Osijek",  country: "Horvátország"},
