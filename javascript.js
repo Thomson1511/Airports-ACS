@@ -349,6 +349,10 @@ document.addEventListener('keydown', function (event) {
         event.preventDefault();
         deleteError();
     }
+    if (event.key === 'F7') {
+        event.preventDefault();
+        showPreviousError();
+    }
 });
 
 const dropdownInput = document.querySelector('.dropdown-input');
@@ -656,6 +660,17 @@ function deleteError(){
     //console.log("előtte: " + ErrorList.join("\n"))
     ErrorList.pop();
     //console.log("utána: " + ErrorList.join("\n"))
+}
+
+function showPreviousError(){
+    let firstElement = ErrorList[ErrorList.length - 1];
+    let secondElement = ErrorList[ErrorList.length - 2];
+    let thirdElement = ErrorList[ErrorList.length - 3];
+    alert(
+        "-1: " + firstElement + "\n" + 
+        "-2: " + secondElement + "\n" +
+        "-3: " + thirdElement + "\n"
+    );
 }
 
 function refresh(){

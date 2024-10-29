@@ -35,7 +35,10 @@
     <div id="container">
         <div id="header">valami</div>
         <div id="inputMenu">
-            <button id="errorRemover" onclick="deleteError()">Remove (F3)</button>
+            <div id="ButtonTop">
+                <button id="errorRemover" onclick="deleteError()">Remove (F3)</button>
+                <button id="errorShow" onclick="showPreviousError()">Previous (F7)</button>
+            </div>
             <div id="CallsignField">
                 <label for="Callsign" id="cls">Airport: </label>
                 <input type="text" id="Callsign" placeholder="Callsign...">
