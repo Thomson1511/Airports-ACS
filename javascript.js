@@ -665,12 +665,18 @@ function deleteError(){
 function showPreviousError(){
     let firstElement = ErrorList[ErrorList.length - 1];
     let secondElement = ErrorList[ErrorList.length - 2];
-    let thirdElement = ErrorList[ErrorList.length - 3];
-    alert(
-        "-1: " + firstElement + "\n" + 
-        "-2: " + secondElement + "\n" +
-        "-3: " + thirdElement + "\n"
-    );
+    let isElementsBeforeSame = firstElement == secondElement;
+    if(ErrorList.length < 1){
+        alert("Nincs hiba")
+    }
+    else{
+        if(isElementsBeforeSame){
+            alert("Megegyezik");
+        }
+        else{
+            alert("Nem egyezik meg")
+        }
+    }
 }
 
 function refresh(){
