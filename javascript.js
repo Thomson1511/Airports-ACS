@@ -655,11 +655,14 @@ function done(){
 }
 
 function deleteError(){
-    errors -= 1;
-    errorstxt.innerHTML = errors;
-    //console.log("előtte: " + ErrorList.join("\n"))
-    ErrorList.pop();
-    //console.log("utána: " + ErrorList.join("\n"))
+    if(ErrorList.length < 1){
+        alert("nincs hiba")
+    }
+    else{
+        errors -= 1;
+        errorstxt.innerHTML = errors;
+        ErrorList.pop();
+    }
 }
 
 function showPreviousError(){
