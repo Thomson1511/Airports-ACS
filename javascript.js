@@ -318,7 +318,7 @@ let IcaoCallsigns = [
     {icaoc: "VABB",	calls: "Mumbai",  country: "India"},
     {icaoc: "VIDP",	calls: "New Delhi",   country: "India"},
     {icaoc: "VOMM",	calls: "Chennai", country: "India"},
-    {icaoc: "VCBI",	calls: "Colombo Bandaranaike",    country: "Sri Lanka"},
+    {icaoc: "VCBI",	calls: "Colombo",    country: "Sri Lanka"},
     {icaoc: "VHHH",	calls: "Hong Kong",  country: "Hongkong"},
     {icaoc: "VRMM",	calls: "Malé",    country: "Maldív-szigetek"},
     {icaoc: "VTBS",	calls: "Bangkok Suvarnabhumi",    country: "Thaiföld"},
