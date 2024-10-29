@@ -43,7 +43,7 @@ let IcaoCallsigns = [
     {icaoc: "LRBS",	calls: "Bukarest-Baneasa",    country: "Románia"},
     {icaoc: "LRCK",	calls: "Constanta",   country: "Románia"},
     {icaoc: "LRCL",	calls: "Cluj Napoca", country: "Románia"},
-    {icaoc: "LRCT",	calls: "Campia Turzii (mil)", country: "Románia"},
+    {icaoc: "LRCT",	calls: "Campia Turzii mil", country: "Románia"},
     {icaoc: "LRIA",	calls: "Iasi",    country: "Románia"},
     {icaoc: "LROD",	calls: "Oradea",  country: "Románia"},
     {icaoc: "LROP",	calls: "Bukarest Henri Coanda",   country: "Románia"},
@@ -52,11 +52,11 @@ let IcaoCallsigns = [
     {icaoc: "LRTM",	calls: "Targu Mures", country: "Románia"},
     {icaoc: "LRTR",	calls: "Timisoara",   country: "Románia"},
     {icaoc: "LYBE",	calls: "Belgrade Nikola Tesla",   country: "Szerbia És Montenegró"},
-    {icaoc: "LYBT",	calls: "Belgrade Batajnica (mil)",    country: "Szerbia És Montenegró"},
+    {icaoc: "LYBT",	calls: "Belgrade Batajnica mil",    country: "Szerbia És Montenegró"},
     {icaoc: "LYNI",	calls: "Nis", country: "Szerbia És Montenegró"},
     {icaoc: "LYPG",	calls: "Podgorica",   country: "Szerbia És Montenegró"},
     {icaoc: "LYTV",	calls: "Tivat",   country: "Szerbia És Montenegró"},
-    {icaoc: "LYPR/BKPR",	calls: "Pristina",  country: "Szerbia És Montenegró"},
+    {icaoc: "LYPR",	calls: "Pristina",  country: "Szerbia És Montenegró"},
     {icaoc: "LDDU",	calls: "Dubrovnik",   country: "Horvátország"},
     {icaoc: "LDLO",	calls: "Losinj",  country: "Horvátország"},
     {icaoc: "LDOS",	calls: "Osijek",  country: "Horvátország"},
@@ -77,7 +77,7 @@ let IcaoCallsigns = [
     {icaoc: "LOWL",	calls: "Linz",    country: "Ausztia"},
     {icaoc: "LOWS",	calls: "Salzburg",    country: "Ausztia"},
     {icaoc: "LOWW",	calls: "Wien Schwechat",  country: "Ausztia"},
-    {icaoc: "LOXZ",	calls: "Zeltweg (mil)",   country: "Ausztia"},
+    {icaoc: "LOXZ",	calls: "Zeltweg mil",   country: "Ausztia"},
     {icaoc: "BIKF",	calls: "Keflavik",    country: "Izland"},
     {icaoc: "BIRK",	calls: "Reykjavik",   country: "Izland"},
     {icaoc: "EBAW",	calls: "Antwerpen",   country: "Belgium"},
@@ -93,7 +93,7 @@ let IcaoCallsigns = [
     {icaoc: "EDDL",	calls: "Düsseldorf",  country: "Németország (Civil)"},
     {icaoc: "EDDM",	calls: "Munich",  country: "Németország (Civil)"},
     {icaoc: "EDDN",	calls: "Nürnberg",    country: "Németország (Civil)"},
-    {icaoc: "EDDP",	calls: "Leipzig/Halle",   country: "Németország (Civil)"},
+    {icaoc: "EDDP",	calls: "Leipzig",   country: "Németország (Civil)"},
     {icaoc: "EDDS",	calls: "Stuttgart",   country: "Németország (Civil)"},
     {icaoc: "EDDV",	calls: "Hannover",    country: "Németország (Civil)"},
     {icaoc: "EDDW",	calls: "Bremen",  country: "Németország (Civil)"},
@@ -162,7 +162,7 @@ let IcaoCallsigns = [
     {icaoc: "LCEN",	calls: "Ercan",   country: "Ciprus"},
     {icaoc: "LCLK",	calls: "Larnaca", country: "Ciprus"},
     {icaoc: "LCPH",	calls: "Paphos",  country: "Ciprus"},
-    {icaoc: "LCRA",	calls: "RAF Akrotiri (mil)",  country: "Ciprus"},
+    {icaoc: "LCRA",	calls: "RAF Akrotiri mil",  country: "Ciprus"},
     {icaoc: "LEAL",	calls: "Alicante",    country: "Spanyolország"},
     {icaoc: "LEBL",	calls: "Barcelona",   country: "Spanyolország"},
     {icaoc: "LECH",	calls: "Castellón",   country: "Spanyolország"},
@@ -220,7 +220,7 @@ let IcaoCallsigns = [
     {icaoc: "LIRN",	calls: "Naples International",    country: "Olaszország"},
     {icaoc: "LIRP",	calls: "Pisa",    country: "Olaszország"},
     {icaoc: "LKHK",	calls: "Hradec Králové",  country: "Csehország"},
-    {icaoc: "LKKB",	calls: "Prague-Kbely (mil)",  country: "Csehország"},
+    {icaoc: "LKKB",	calls: "Prague-Kbely mil",  country: "Csehország"},
     {icaoc: "LKKU",	calls: "Kunovice",    country: "Csehország"},
     {icaoc: "LKKV",	calls: "Karlovy Vary",    country: "Csehország"},
     {icaoc: "LKMH",	calls: "Mnichovo Hradiste",   country: "Csehország"},
@@ -339,9 +339,15 @@ let IcaoCallsigns = [
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter'){
         showNext();
-    }
-    if (event.ctrlKey){
         document.getElementById('Callsign').focus();
+    }
+    if (event.key === 'F1') {
+        event.preventDefault(); // Megakadályozza a böngésző alapértelmezett F1 súgó funkcióját
+        hint();
+    }
+    if (event.key === 'F3') {
+        event.preventDefault();
+        deleteError();
     }
 });
 

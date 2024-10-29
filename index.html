@@ -35,10 +35,10 @@
     <div id="container">
         <div id="header">valami</div>
         <div id="inputMenu">
-            <button id="errorRemover" onclick="deleteError()">Remove</button>
+            <button id="errorRemover" onclick="deleteError()">Remove (F3)</button>
             <div id="CallsignField">
                 <label for="Callsign" id="cls">Callsign: </label>
-                <input type="text" id="Callsign">
+                <input type="text" id="Callsign" placeholder="Callsign...">
             </div>
             <div id="IcaoField">
                 <label for="ICAOcode" id="Icaolabel">ICAO code: </label>
@@ -379,8 +379,8 @@
         </div>
         <div id="footer">
             <div id="score">xx</div>
-            <button id="hint" onclick="hint()">Hint</button>
-            <button id="submit" onclick="showNext()">Next</button>
+            <button id="hint" onclick="hint()">Hint (F1)</button>
+            <button id="submit" onclick="showNext()">Next (Enter)</button>
         </div>
     </div>
     <div id="refresh" onclick="filterAndShuffle()">Refresh</div>
