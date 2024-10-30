@@ -635,6 +635,8 @@ function done(){
         alert('Congratulations! You have completed all the constraints.');
     }
     else{
+        //sorting the list
+        ErrorList.sort();
         // Create a downloadable .txt file for the ErrorList
         const errorContent = ErrorList.join("\n");
         const blob = new Blob([errorContent], { type: 'text/plain' });
