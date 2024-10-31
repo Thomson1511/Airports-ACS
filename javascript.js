@@ -286,7 +286,7 @@ let IcaoCallsigns = [
     {icaoc: "OIII",	calls: "Tehran Mehrabad", country: "Irán"},
     {icaoc: "OJAI",	calls: "Amman Queen Alia",    country: "Jordánia"},
     {icaoc: "OJAQ",	calls: "Aqaba",   country: "Jordánia"},
-    {icaoc: "OKBK",	calls: "Kuwait",  country: "Kuvait"},
+    {icaoc: "OKKK",	calls: "Kuwait",  country: "Kuvait"},
     {icaoc: "OLBA",	calls: "Beirut",  country: "Libanon"},
     {icaoc: "OMAA",	calls: "Abu Dhabi",   country: "Egyesült Arab Emírségek"},
     {icaoc: "OMDB",	calls: "Dubai International", country: "Egyesült Arab Emírségek"},
