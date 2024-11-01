@@ -229,6 +229,7 @@ body{
     border: 1px solid black;
     border-radius: 3px;
     padding-left: 10px;
+    text-transform: uppercase;
 }
 #CallsignField{
     margin-bottom: 2vh;
