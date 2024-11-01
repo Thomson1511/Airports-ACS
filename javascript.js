@@ -396,6 +396,30 @@ function filterAndShuffle() {
     showCalls();
 }
 
+function RefreshAllAirport(){
+    // Get the selector input values
+    const selectorFrom = parseInt(document.getElementById("selectFrom").value) - 1; // Convert to zero-based index
+    const selectorTo = parseInt(document.getElementById("selectTo").value);
+
+    if (isNaN(selectorFrom) || isNaN(selectorTo) || selectorFrom < 0 || selectorTo > IcaoCallsigns.length || selectorFrom >= selectorTo) {
+        //ha nincs szűrve
+        ShuffledCallsigns = shuffle(IcaoCallsigns);
+        currentCallsignIndex = 0;
+        nextCallsignIndex = 1;
+        errors = 0;
+        errorstxt.innerHTML = errors;
+        clear();
+
+        // Output the shuffled list (or you can use it further as needed)
+        console.log(ShuffledCallsigns);
+        showCalls();
+    }
+    else{
+        //ha szűrve van
+        filterAndShuffle();
+    }
+}
+
 // Example shuffle function (already present in your code)
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -630,7 +654,7 @@ function done(){
     errors = 0;
     errorstxt.innerHTML = errors;
     showCalls();
-    filterAndShuffle();
+    RefreshAllAirport();
     if(ErrorList.length < 1){
         alert('Congratulations! You have completed all the constraints.');
     }
